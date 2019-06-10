@@ -14,8 +14,9 @@ import GoogleSignIn
 class TableViewController: UITableViewController {
     
     @IBOutlet var LocationTableView: UITableView!
+    @IBOutlet weak var listTitle: UINavigationItem!
     
-     var fetchedResultsController:NSFetchedResultsController<Location>!
+    var fetchedResultsController:NSFetchedResultsController<Location>!
     
     let dateFormatter: DateFormatter = {
         let df = DateFormatter()
@@ -51,6 +52,8 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        listTitle.title = DataController.shared().getTitle()
         LocationTableView.delegate = self
         LocationTableView.dataSource = self
         setupFetchedResultsController()

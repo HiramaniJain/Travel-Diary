@@ -21,6 +21,9 @@ class EditViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        descriptionLocation.delegate = self as? UITextViewDelegate
+        name.delegate = self as? UITextFieldDelegate
+        
         name.layer.borderColor = UIColor.white.cgColor
         name.layer.borderWidth = 2.0
         descriptionLocation.layer.borderColor = UIColor.white.cgColor
@@ -37,12 +40,20 @@ class EditViewController: UIViewController, MKMapViewDelegate {
         mapView.addAnnotation(annotation)
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func saveButton(_ sender: Any) {
         location.name = name.text
         location.descriptionLocation = descriptionLocation.text
         DataController.shared().save()
     }
-    
     
     @IBAction func deleteButton(_ sender: Any) {
         showDeleteAlert(title:"Delete", message: "Do you want to delete the location?")
@@ -55,7 +66,7 @@ class EditViewController: UIViewController, MKMapViewDelegate {
             locationDetailsViewController.location = location
         }
     }
-    
+ 
     // Using to show locations on the map
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         

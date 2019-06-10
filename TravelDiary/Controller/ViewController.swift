@@ -17,7 +17,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         super.viewDidLoad()
         
         // Initialize sign-in
-        GIDSignIn.sharedInstance().clientID = DataController.shared().Google_Client_ID
+        GIDSignIn.sharedInstance().clientID = ClientNetwork().Google_Client_ID
         
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
@@ -34,12 +34,13 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
-            //TODO show alert for login failed
+            showAlert()
             print("\(error.localizedDescription)")
         } else {
             // Perform any operations on signed in user here.
             print(user.profile.email!)
             print(user.profile.givenName!)
+            DataController.shared().setUserName(user: user.profile.givenName!)
             performSegue(withIdentifier: "successfullLogin", sender: self)
         }
     }
@@ -47,7 +48,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
               withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
-        //GIDSignIn.sharedInstance()?.signOut()
+        GIDSignIn.sharedInstance()?.signOut()
         
     }
     
@@ -57,5 +58,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-   
+    // MARK: Helper methods for actions
+    private func showAlert() {
+        let alert = UIAlertController(title: nil, message: "Network connection failed!", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

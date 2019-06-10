@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TSC-Ay-V12">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController storyboardIdentifier="loginViewController" id="TSC-Ay-V12" customClass="ViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mmy-xN-Mjz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-fL-tTQ" customClass="GIDSignInButton">
@@ -23,9 +23,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Diary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy6-VC-c2E">
-                                <rect key="frame" x="105" y="46" width="204" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Diary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vy6-VC-c2E">
+                                <rect key="frame" x="105" y="46" width="165" height="47"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -58,7 +58,7 @@
             <objects>
                 <tableViewController id="89Z-pG-brc" userLabel="Table View Controller" customClass="TableViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2B7-0y-kOx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,20 +67,20 @@
                         <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" id="o3a-xB-p96" userLabel="LocationCell" customClass="LocationCell" customModule="TravelDiary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o3a-xB-p96" id="QZd-VH-1jE">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdg-rd-pqD" userLabel="Place Name Label">
-                                            <rect key="frame" x="36" y="11.333333333333336" width="42" height="21"/>
+                                            <rect key="frame" x="32" y="11.5" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80Z-12-4gI" userLabel="Date Label">
-                                            <rect key="frame" x="364" y="11.666666666666666" width="42" height="20.333333333333336"/>
+                                            <rect key="frame" x="325" y="11.5" width="42" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -120,6 +120,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="LocationTableView" destination="2B7-0y-kOx" id="e01-xP-MeH"/>
+                        <outlet property="listTitle" destination="uqe-85-HxW" id="LnF-I6-j60"/>
                         <segue destination="NNA-O5-I17" kind="show" identifier="showLocationDetailsFromTableView" id="VvP-UP-D7U"/>
                     </connections>
                 </tableViewController>
@@ -132,17 +133,17 @@
             <objects>
                 <viewController id="bjr-an-R2f" userLabel="Edit View Controller" customClass="EditViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5CG-6Y-YEf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2Yx-xc-yMm">
-                                <rect key="frame" x="0.0" y="20" width="414" height="290"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="128"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huX-ul-wud" userLabel="Button Stack View">
-                                <rect key="frame" x="20" y="666" width="374" height="50"/>
+                                <rect key="frame" x="20" y="548" width="335" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x76-fO-0ds" userLabel="Save">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="SAVE"/>
@@ -152,7 +153,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA8-AY-UtX" userLabel="Delete">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="50"/>
+                                        <rect key="frame" x="167.5" y="0.0" width="167.5" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="DELETE"/>
@@ -168,19 +169,19 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RgK-y1-2Ky" userLabel="Detail Stack View">
-                                <rect key="frame" x="20" y="310" width="374" height="356"/>
+                                <rect key="frame" x="20" y="192" width="335" height="356"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="top" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xjj-lh-dgh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="63"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5e-v7-Dyz">
-                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="63"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ro-VU-mEn">
-                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="165" height="63"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -193,16 +194,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-9p-myA">
-                                        <rect key="frame" x="0.0" y="38" width="374" height="318"/>
+                                        <rect key="frame" x="0.0" y="71" width="335" height="285"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pp-ts-TPI">
-                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="318"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="285"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UZu-KN-nZT">
-                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="318"/>
+                                                <rect key="frame" x="170" y="0.0" width="165" height="285"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -250,11 +251,11 @@
             <objects>
                 <viewController id="Oa5-jV-Wcl" customClass="MapViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ULu-O9-JeM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lMD-xL-vUP">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,6 +280,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapTitle" destination="eOH-7D-T85" id="4xa-Lm-qkN"/>
                         <outlet property="mapView" destination="lMD-xL-vUP" id="0Ma-eN-MJs"/>
                         <segue destination="NNA-O5-I17" kind="show" identifier="showLocationDetailsFromMapView" id="chD-tR-Wk5"/>
                     </connections>
@@ -294,7 +296,7 @@
                     <tabBarItem key="tabBarItem" title="List" image="icons8-list-30" id="uD6-w6-s3B"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="dKf-py-o1E">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -319,7 +321,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="icons8-map-marker-30" id="Las-Re-0Zf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="2r3-Y1-Vj9">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -358,17 +360,17 @@
             <objects>
                 <viewController id="8L1-Dp-s1P" userLabel="Add View Controller" customClass="AddViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQw-dl-Cnb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FQR-q4-495">
-                                <rect key="frame" x="0.0" y="64" width="414" height="197"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="128"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdE-gC-4Cs" userLabel="Button Stack View">
-                                <rect key="frame" x="20" y="617" width="374" height="50"/>
+                                <rect key="frame" x="20" y="548" width="335" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrW-IY-sUd" userLabel="Save">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="SAVE"/>
@@ -383,19 +385,19 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mES-8f-nP9" userLabel="Detail Stack View">
-                                <rect key="frame" x="20" y="261" width="374" height="356"/>
+                                <rect key="frame" x="20" y="192" width="335" height="356"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="top" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h45-N0-KA2">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="63"/>
                                         <subviews>
                                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UL-bo-35l">
-                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="63"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H40-qo-N5R">
-                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="165" height="63"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -408,16 +410,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZuF-vA-HfD">
-                                        <rect key="frame" x="0.0" y="38" width="374" height="318"/>
+                                        <rect key="frame" x="0.0" y="71" width="335" height="285"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mO-JF-Qod">
-                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="318"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="285"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sz2-qX-2tX">
-                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="318"/>
+                                                <rect key="frame" x="170" y="0.0" width="165" height="285"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -454,37 +456,38 @@
                         <outlet property="descriptionLocation" destination="Sz2-qX-2tX" id="U3M-HG-heV"/>
                         <outlet property="mapView" destination="FQR-q4-495" id="puE-hj-2WR"/>
                         <outlet property="name" destination="H40-qo-N5R" id="e5h-2V-ux8"/>
+                        <segue destination="jh0-qa-efR" kind="show" identifier="showRestaurants" id="rgS-lL-qQF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZN-gn-tjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5203" y="974"/>
+            <point key="canvasLocation" x="4974" y="1008"/>
         </scene>
         <!--Trip Deatils View Controller-->
         <scene sceneID="J0W-NR-Z7R">
             <objects>
                 <viewController id="NNA-O5-I17" userLabel="Trip Deatils View Controller" customClass="LocationDetailsViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkL-kh-YYB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="snc-Mq-Kl7">
-                                <rect key="frame" x="0.0" y="20" width="414" height="290"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="128"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-lb-Qcn" userLabel="Detail Stack View">
-                                <rect key="frame" x="20" y="310" width="374" height="356"/>
+                                <rect key="frame" x="20" y="192" width="335" height="356"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="top" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="N7w-I7-bv2">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="63"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeO-Aj-Ous">
-                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="63"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="963-mI-cW7" userLabel="ShowName">
-                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="165" height="63"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -496,16 +499,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qrn-ZK-jYN">
-                                        <rect key="frame" x="0.0" y="38" width="374" height="318"/>
+                                        <rect key="frame" x="0.0" y="71" width="335" height="285"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZQ-s7-cc8">
-                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="318"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="285"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GfS-06-6vw" userLabel="ShowDescription">
-                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="318"/>
+                                                <rect key="frame" x="170" y="0.0" width="165" height="285"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" red="1" green="0.4769714719" blue="0.33278983839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -546,11 +549,41 @@
                         <outlet property="mapView" destination="snc-Mq-Kl7" id="6Xa-7s-2dQ"/>
                         <outlet property="name" destination="963-mI-cW7" id="8El-gT-XjR"/>
                         <outlet property="showDescription" destination="GfS-06-6vw" id="cW8-Lx-F6L"/>
+                        <segue destination="jh0-qa-efR" kind="show" identifier="showRestaurantsFromSavedPin" id="8J6-2A-kgS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndF-kh-OCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5554" y="155"/>
+            <point key="canvasLocation" x="5364" y="55"/>
+        </scene>
+        <!--Explore Restaurants-->
+        <scene sceneID="dyU-QF-qBR">
+            <objects>
+                <viewController id="jh0-qa-efR" userLabel="Explore Restaurants" customClass="RestaurantsViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdu-pR-DzU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gGO-bC-dY2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gGO-bC-dY2" firstAttribute="top" secondItem="Olz-z3-DOq" secondAttribute="top" id="QhO-0t-mGd"/>
+                            <constraint firstItem="Olz-z3-DOq" firstAttribute="trailing" secondItem="gGO-bC-dY2" secondAttribute="trailing" id="Su4-61-jcF"/>
+                            <constraint firstItem="Olz-z3-DOq" firstAttribute="bottom" secondItem="gGO-bC-dY2" secondAttribute="bottom" id="XHY-Sd-yoF"/>
+                            <constraint firstItem="gGO-bC-dY2" firstAttribute="leading" secondItem="Olz-z3-DOq" secondAttribute="leading" id="aP6-RK-QDD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Olz-z3-DOq"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="gGO-bC-dY2" id="dV3-gr-ogV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmL-64-IMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5830" y="1105"/>
         </scene>
     </scenes>
     <resources>
@@ -558,7 +591,8 @@
         <image name="icons8-map-marker-30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="edj-cj-1qo"/>
+        <segue reference="8J6-2A-kgS"/>
+        <segue reference="VvP-UP-D7U"/>
         <segue reference="RQP-AU-sHV"/>
         <segue reference="ZOH-RZ-eKa"/>
     </inferredMetricsTieBreakers>

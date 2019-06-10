@@ -9,11 +9,21 @@
 import Foundation
 import CoreData
 import UIKit
+import MapKit
 
 class DataController {
     let persistentContainer:NSPersistentContainer
     
-    let Google_Client_ID:String = "633354884666-kerjfpnoscd5a4tlevm4ghnpts5rl2pt.apps.googleusercontent.com"
+    var userName:String!
+    
+    func setUserName(user: String) {
+        userName = user
+    }
+    
+    func getTitle() -> String {
+        let title = "\(userName ?? "") \(" Diary")"
+        return title
+    }
     
     var viewContext:NSManagedObjectContext {
         return persistentContainer.viewContext

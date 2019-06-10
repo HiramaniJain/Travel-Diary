@@ -15,12 +15,14 @@ class MapViewController: UIViewController, MKMapViewDelegate
 {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapTitle: UINavigationItem!
     
     var locations: [Location]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        mapTitle.title = DataController.shared().getTitle()
         
         locations = fetchAllLocation()
         showLocation(locations: locations)
@@ -28,6 +30,8 @@ class MapViewController: UIViewController, MKMapViewDelegate
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        mapView.removeAnnotations(mapView.annotations)
         locations = fetchAllLocation()
         showLocation(locations: locations)
     }
